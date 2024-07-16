@@ -94,7 +94,7 @@ const Templates = () => {
             <div className='w-full h-auto bg-white'>
                 <h1 className='text-5xl font-bold mb-4 text-center pt-4 text-black '>Template's</h1>
 
-                <div className='w-full h-auto  flex flex-wrap gap-4 justify-center items-center'>
+                <div className='w-full h-auto  flex flex-wrap gap-4 justify-center items-center pb-4'>
 
                     {
                         SocialMedia.map((res, index) => (
