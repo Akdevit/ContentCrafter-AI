@@ -14,7 +14,8 @@ const Dashboard = () => {
 
 
   const socialmedias = items?.platform;
-  const apiKey = 'AIzaSyDala1D44RQNYzBl3Q6opV3toW2jTAEXGU';
+  const apiKey = process.env.REACT_APP_GEMINI_API_KEY
+
 
 
   const GenratecontantAi = () => {
