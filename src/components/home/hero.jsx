@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
         <>
@@ -17,9 +17,11 @@ const Hero = () => {
                     <p className="text-lg pb-4">
                         Harness the power of AI to create compelling content effortlessly. Elevate your writing with precision, creativity, and efficiency. Join the future of content creation today.
                     </p>
-                    <button className=" text-white font-bold py-2 px-4 rounded backdrop-blur-md shadow-md">
-                        Start Writing Now
-                    </button>
+                    <Link to='/templates'>
+                        <button className=" text-white font-bold py-2 px-4 rounded backdrop-blur-md shadow-md">
+                            Start Writing Now
+                        </button>
+                    </Link>
                 </div>
             </div>
         </>

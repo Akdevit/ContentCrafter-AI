@@ -30,7 +30,7 @@ const Nav = () => {
 
             {/* Mobile Menu */}
             <div className={`md:hidden fixed top-0 z-40 left-0 w-full h-screen bg-white backdrop-filter backdrop-blur-md transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                <div className='flex flex-col items-center justify-center h-full'>
+                <div className='flex flex-col gap-4 items-center justify-center h-full'>
                     <Link to='/' className='text-black hover:text-gray-700'>Home</Link>
                     <Link to='/templates' className='text-black hover:text-gray-700'>Templates</Link>
                     {/* Add more mobile menu items as needed */}
