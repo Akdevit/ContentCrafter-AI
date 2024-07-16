@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,17 +10,22 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="/">Privacy Policy</a></li>
-                            <li><a href="/">Terms of Service</a></li>
-                            <li><a href="/">Help Center</a></li>
+                            <li>
+                                <Link to='/' className='text-white hover:text-gray-700'>Home</Link>
+                            </li>
+                            <li>
+                                <Link to='/templates' className='text-white hover:text-gray-700'>Templates</Link>
+                            </li>
                             {/* Add more links as needed */}
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
                         <p>Email: contact@example.com</p>
-                        <p>Phone: +1 (123) 456-7890</p>
-                        <p>Address: 123 Main St, City, Country</p>
+                        <p>Phone: +91 8757049790</p>
+                        <p>Msg:
+                            Anyone interested in making any type of website for their business personal DM me +918757049790
+                        </p>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Social Media</h3>
