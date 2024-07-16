@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Editor from "../components/dashboard/Editor"
 import { useSelector } from "react-redux";
-import { LuMinimize } from "react-icons/lu";
+import { MdOutlineCloseFullscreen } from "react-icons/md";
 import toast from "react-hot-toast";
 
 const Dashboard = () => {
@@ -110,7 +110,7 @@ const Dashboard = () => {
         {/* text editor */}
         <div className='xl:w-[80%] lg:w-[80%] md:w-[80%] sm:w-[80%] w-[100%] h-[100%]  overflow-auto'>
           <div onClick={() => ToggleSideBaar()} className="w-[40px] cursor-pointer h-[40px] rounded-lg shadow-lg bg-gray-100 absolute z-30 right-8 bottom-8 flex justify-center items-center xl:hidden lg:hidden md:hidden sm:hidden" >
-            <LuMinimize className="text-2xl" />
+            <MdOutlineCloseFullscreen className="text-xl" />
           </div>
           <Editor response={response} />
         </div>

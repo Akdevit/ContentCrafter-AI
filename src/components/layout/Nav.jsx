@@ -10,9 +10,11 @@ const Nav = () => {
     return (
         <>
             <div className='w-full h-[60px] fixed top-0 z-50 flex items-center justify-between px-4 bg-opacity-30 bg-white backdrop-blur-md'>
-                <div className='text-xl font-bold'>
-                    ContentCrafter AI
-                </div>
+                <Link to='/'>
+                    <div className='text-xl font-bold'>
+                        ContentCrafter AI
+                    </div>
+                </Link>
                 <nav className='hidden md:flex space-x-4 '>
                     <Link to='/' className='text-black hover:text-gray-700'>Home</Link>
                     <Link to='/templates' className='text-black hover:text-gray-700'>Templates</Link>
